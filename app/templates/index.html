@@ -1,0 +1,65 @@
+{%extends 'all/base.html'%}
+{% load bootstrap4 %}
+{{block.super}}
+{% block content %}
+
+{% for all in article%}
+<!-- <div class='row'>
+  <div class='col-md-4'></div>
+  <div class='col-md-4'>
+    <div class="panel panel-default">
+      <div class="panel-heading"><b>Name: {{ all.title }}</b></div>
+      <form class="" action="" method="post">
+        <div class="panel-body" style='border:#118400; box-shadow: 5px 10px 18px #888888; '><img src="{{ all.article_img.url }}" alt="jpg" width="350" height="300" /></div>
+
+
+
+
+
+
+      </form>
+      <div class="panel-footer" style='background-color:white;box-shadow: 4px 5px 18px #888888;'>
+        <a href="#"><i class="glyphicon glyphicon-comment" style="color:black;  aria-hidden="true"></i></a>
+        <a href="#"><i class="glyphicon glyphicon-heart-empty" style="color:black;" aria-hidden="true"></i></a>
+        <br><b>comments</b>:<br><br>
+        <br><div class="panel-body"><hr><input type="text" action="#" method="post" name="name" placeholder="add comment..." style = "
+    margin:0px;
+    color: #000;
+	margin:0 auto;
+  border:none;
+  outline: none;" required=""/>
+
+  <input type="submit" value="submit">
+
+</div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div> -->
+<div class="row">
+  <div class="col-md-4" >
+    <div class="col-md-4">
+
+    </div>
+    <div class="card">
+      <div class="card-header" style="background:white">
+        {{ all.title }}
+      </div>
+      <div class="card-body">
+        <h5 class="card-title"><img src="{{ all.article_img.url }}" alt="jpg" style="width: 100%;
+        height: 15vw;
+        object-fit: cover;"/></h5>
+        <p class="card-text"></p>
+        <a href="#!" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+{% endfor %}
+{% endblock %}

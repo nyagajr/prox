@@ -1,0 +1,61 @@
+{%extends 'all/base.html'%}
+{% load bootstrap4 %}
+{{block.super}}
+{% block content %}
+<div class="card">
+  <div class="card-header">
+    Featured
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Special title treatment</h5>
+    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    <a href="#!" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+
+
+<div class="bs-example">
+    <div class="container-fluid">
+        <!-- Card sizing using grid markup -->
+        <div class="row mb-4">
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor.</p>
+                        <a href="#" class="btn btn-primary">Know more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Vestibulum id metus ac nisl bibendum nibh scelerisque non purus in suspendisse.</p>
+                        <a href="#" class="btn btn-primary">Know more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card sizing using sizing utility classes -->
+        <div class="card w-75 mb-4">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor.</p>
+                <a href="#" class="btn btn-primary">Know more</a>
+            </div>
+        </div>
+
+        <!-- Card sizing using sizing utility classes -->
+        <div class="card" style="width: 15rem;">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor.</p>
+                <a href="#" class="btn btn-primary">Know more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
