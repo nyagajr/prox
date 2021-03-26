@@ -5,24 +5,23 @@
 {% block content %}
 <div class="card" style="border-color:white">
   <div class="card-heading">
-    <img src="media/images/fruit.png" alt="Card image" style="width: 100%;
-    height: 15vw;
-    object-fit: cover;">
+    <img src="media/images/colorful-galaxy-planets-4k-ih.jpg" alt="Card image" style="width: 100%;height: 20vw;object-fit: cover;">
   </div>
 </div> <br>
 {% for all in article%}
-  {% if forloop.counter0|divisibleby:3 %} <div class="row text-center"> {%  endif %}
+  {% if forloop.counter0|divisibleby:3 %} <div class="row" text-center"> {%  endif %}
+
   <div class="col-md-4" >
-    <div class="card" style="">
+    <div class="card" style="left: 5px">
       <div class="card-header" style="background:white">
         {{ all.title }}
       </div>
       <div class="card-body">
-        <h5 class="card-title"><img src="{{ all.article_img.url }}" alt="jpg" style="width: 100%;
+        <img src="{{ all.article_img.url }}" alt="jpg" class="card-title" style="width: 100%;
         height: 15vw;
-        object-fit: cover;"/></h5>
+        object-fit: cover;"/>
         <p class="card-text"></p>
-        <a href="#!" class="btn btn-primary">Go somewhere</a>
+        <a href="#" class="btn btn-outline-primary">Read more>></a>
       </div>
     </div>
   </div>
